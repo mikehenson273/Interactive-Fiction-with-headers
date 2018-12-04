@@ -7,7 +7,7 @@
 
 using namespace std;
 
-//for allowing functions to be used in source
+//for allowing functions to be used in source files
 void bedSearch();
 void GameEngine();
 void goAgain();

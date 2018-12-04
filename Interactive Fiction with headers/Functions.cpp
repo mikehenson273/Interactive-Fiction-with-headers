@@ -1,14 +1,13 @@
 #include "functions.h"
 using namespace std;
 
-//had to declare both booleans and strings here because it gave duplicate problems while in header
-bool checkAgain = false;
-bool deskKey = false;
-bool doorCheck = false; //had to add an additional boolean as a check so the program wouldn't freak out
-bool doorKey = false;
-bool isLightOn = false;
-bool lightCheck = false;
-bool playAgain = false;
+extern bool checkAgain;
+extern bool deskKey;
+extern bool doorCheck; //had to add an additional boolean as a check so the program wouldn't freak out
+extern bool doorKey;
+extern bool isLightOn;
+extern bool lightCheck;
+extern bool playAgain;
 
 string name;
 string userChoice();
@@ -346,7 +345,7 @@ string WelcomeUser() //function to greet user and explain the situation.
 	return playersName;
 }
 
-
+/*
 void mainEngine() //had to create because i couldn't declare booleans in header file
 {
 	do //do loop that the main resides in is a play again loop
@@ -364,3 +363,4 @@ void mainEngine() //had to create because i couldn't declare booleans in header 
 		goAgain(); //function run for confirmation on playing again
 	} while (playAgain);
 }
+*/
